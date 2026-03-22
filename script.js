@@ -1,18 +1,3 @@
-/**
- * script.js — Constituency Website
- * ============================================================
- * Modules:
- *   1. Project Data (static array)
- *   2. Project Rendering
- *   3. Project Filtering
- *   4. Mobile Navigation Toggle
- *   5. Sticky Header Shadow on Scroll
- *   6. Scroll-Reveal Animation (IntersectionObserver)
- *   7. Contact Form Validation & Submission
- *   8. Init — wires everything up on DOMContentLoaded
- * ============================================================
- */
-
 
 const projects = [
   {
@@ -222,12 +207,9 @@ function markRevealElements() {
     .forEach((el) => el.classList.add("reveal"));
 }
 
-/** 
- * Validates a single field and updates the error span.
- * @param {HTMLInputElement|HTMLTextAreaElement} field
- * @param {HTMLElement} errorEl
- * @returns {boolean} isValid
- */
+
+ //Validates a single field and updates the error span.
+ 
 function validateField(field, errorEl) {
   const value = field.value.trim();
   let message = "";
@@ -270,7 +252,7 @@ function initContactForm() {
 
   // Form submission
   form.addEventListener("submit", (e) => {
-    e.preventDefault(); // Prevent real form submission (MVP)
+    e.preventDefault(); 
 
     // Validate all required fields
     const isNameValid    = validateField(nameField, nameError);
@@ -285,7 +267,7 @@ function initContactForm() {
       return;
     }
 
-    // Collect form data
+    
     const formData = {
       name:    nameField.value.trim(),
       email:   emailField.value.trim(),
@@ -294,7 +276,6 @@ function initContactForm() {
       sentAt:  new Date().toISOString(),
     };
 
-    // --- LOG TO CONSOLE (replace with real API call in production) ---
     console.log("📬 New Constituency Message Received:");
     console.table(formData);
 
@@ -309,7 +290,7 @@ function initContactForm() {
       // Show success feedback
       feedback.className = "form-feedback success";
       feedback.textContent =
-        "✅ Thank you! Your message has been received. We'll be in touch soon.";
+        "Thank you! Your message has been received. We'll be in touch soon.";
 
       
       form.reset();
@@ -342,5 +323,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollReveal();
   initContactForm();
 
-  console.log("✅ Constituency website initialised successfully.");
+  console.log("Constituency website initialised successfully.");
 });
