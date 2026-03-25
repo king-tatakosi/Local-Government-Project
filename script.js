@@ -140,7 +140,7 @@ function initStickyHeader() {
   if (!header) return;
 
   const onScroll = () => {
-    header.classList.toggle("scrolled", window.scrollY > 10);
+    header.classList.toggle("scrolled", window.scrollY > 5);
   };
 
   // Use passive listener for performance
@@ -267,21 +267,30 @@ function initContactForm() {
       return;
     }
 
-    
     const formData = {
       name:    nameField.value.trim(),
       email:   emailField.value.trim(),
       subject: document.getElementById("subject").value,
-      message: messageField.value.trim(),
-      sentAt:  new Date().toISOString(),
+      message: messageField.value.trim()
     };
 
-    console.log("📬 New Constituency Message Received:");
+    console.log(" New Constituency Message Received:");
     console.table(formData);
 
     // Simulate a brief loading state on the button
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending…";
+
+    //Send form data via EmailJs
+    emailjs.init("wb2biSBH_uvtWwPPv")
+    emailjs.send("service_1rgujg8", "template_vgaa0ex", formData)
+      .then(() => {
+        console.log("Email sent successfully!");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+
 
     setTimeout(() => {
       submitBtn.disabled = false;
