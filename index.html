@@ -34,13 +34,13 @@
   <meta property="og:type" content="website" />
   <!-- awaiting deployment to set og:url -->
   <meta property="og:url" content="https://local-government-project-chi.vercel.app/" />
-  <meta property="og:image" content="https://local-government-project-chi.vercel.app/images/open_graph.png" />
+  <meta property="og:image" content="https://local-government-project-chi.vercel.app/images/open_graph.webp" />
   <meta property="og:site_name" content="Hon. Sebastian Deh, MP" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Hon. Sebastian Deh — MP, Kpando Constituency" />
   <meta name="twitter:description" content="Learn about Hon. Sebastian Deh's work in education, infrastructure, and constituency development." />
-  <meta name="twitter:image" content="https://local-government-project-chi.vercel.app/images/open_graph.png" />
+  <meta name="twitter:image" content="https://local-government-project-chi.vercel.app/images/open_graph.webp" />
   <meta name="og:image:width" content="1200" />
   <meta name="og:image:height" content="630" />
   <link rel="stylesheet" href="styles.css" />
@@ -131,10 +131,11 @@
         <div class="hero-portrait-wrap">
           <div class="portrait-frame">
             <img
-              src="images/Profile.jpg"
+              src="images/Profile.webp"
               alt="Portrait of Hon. Sebastian Deh, Member of Parliament"
               class="hero-portrait"
-              loading="lazy"
+              width="480"
+              height="652"
             />
           </div>
         </div>
@@ -149,10 +150,11 @@
         <div class="about-image-col">
           <div class="about-img-wrap">
             <img
-              src="images/about.jpg"
+              src="images/about.webp"
               alt="Hon. Sebastian Deh in the constituency"
               class="about-img"
-              loading="lazy"
+              width="522"
+              height="671"
             />
             <div class="about-img-caption">
               Awarding students at a community forum, 2026.
@@ -213,27 +215,33 @@
 
           <div class="official-card">
             <img
-              src="images/mce.png"
-              alt="District Chief Executive"
+              src="images/mce.webp"
+              alt="Municipal Chief Executive"
               class="official-avatar"
+              width="510"
+              height="650"
               loading="lazy"
             />
             <div class="official-info">
               <h3 class="official-name">Hon. Killian Donkor</h3>
               <span class="official-role">Municipal Chief Executive</span>
-              <p class="official-bio">Overseeing the day-to-day administration of Kpando MunicipalAssembly.</p>
+              <p class="official-bio">Overseeing the day-to-day administration of Kpando Municipal Assembly.</p>
             </div>
           </div>
 
           <div class="official-card">
             <img
-              src="https://placehold.co/200x200/c9a84c/1a2744?text=MCD&font=playfair-display"
-              alt="District Coordinating Director"
+              src="images/mcd.webp"
+              alt="Municipal Coordinating Director"
+              id="mcd-avatar"
               class="official-avatar"
+              width="270"
+              height="270"
               loading="lazy"
+              style="object-position: center top"
             />
             <div class="official-info">
-              <h3 class="official-name">Gustav Corbina Atsu</h3>
+              <h3 class="official-name">Mr. Gilbert Akaba</h3>
               <span class="official-role">Municipal Coordinating Director</span>
               <p class="official-bio">Head of the technical and administrative staff of the Municipal Assembly.</p>
             </div>
@@ -241,19 +249,19 @@
 
           <div class="official-card">
             <img
-              src="https://placehold.co/200x200/2d4a7a/f0ead6?text=Presiding+Member&font=playfair-display"
-              alt="Presiding Member"
+              src="images/staff.webp"
+              alt="Assembly Secretary"
               class="official-avatar"
+              width="270"
+              height="270"
               loading="lazy"
             />
             <div class="official-info">
-              <h3 class="official-name"></h3>
-              <span class="official-role">Presiding Member</span>
-              <p class="official-bio">Chairs meetings of the Municipal Assembly and ensures legislative accountability.</p>
+              <h3 class="official-name">Commited Staff</h3>
+              <span class="official-role">Assembly Staff</span>
+              <p class="official-bio">Support the day-to-day operations of the Municipal Assembly.</p>
             </div>
           </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -299,31 +307,31 @@
 
           <div class="contact-details">
             <div class="contact-detail-item">
-              <span class="contact-icon">📍</span>
+              <img class="contact-icon" src="images/location-icon.svg" alt="Location Icon" />
               <div>
-                <strong>Constituency Office</strong><br />
-                Tsakpe,<br />
+                <strong>Constituency Office</strong>
+                Tsakpe,
                 Kpando — Volta Region, Ghana
               </div>
-            </div>
+            </div><br />
             <div class="contact-detail-item">
-              <span class="contact-icon">📞</span>
+              <img class="contact-icon" src="images/phone-icon.svg" alt="Phone Icon" />
               <div>
-                <strong>Phone</strong><br />
+                <strong>Phone</strong>
                 +233 (0) 32 200 0000
               </div>
-            </div>
+            </div> <br />
             <div class="contact-detail-item">
-              <span class="contact-icon">✉️</span>
+              <img class="contact-icon" src="images/mail-icon.svg" alt="Email Icon" />
               <div>
-                <strong>Email</strong><br />
+                <strong>Email</strong>
                 MP@parliament.gh
-              </div>
-            </div>
+              </div> 
+            </div> <br />
             <div class="contact-detail-item">
-              <span class="contact-icon">🕐</span>
+              <img class="contact-icon" src="images/timer-icon.svg" alt="Clock Icon" />
               <div>
-                <strong>Office Hours</strong><br />
+                <strong>Office Hours</strong>
                 Mon – Fri, 8:00 AM – 5:00 PM
               </div>
             </div>
@@ -382,7 +390,7 @@
 
   </main>
 
-  <!-- ===================== FOOTER ===================== -->
+  
   <footer class="site-footer" id="footer">
     <div class="container footer-container">
 
@@ -390,13 +398,13 @@
         <h4 class="footer-group-heading">Follow Us</h4>
         <div class="social-links">
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sebastian-deh-5516493b?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link" aria-label="LinkedIn">
-            <img src="images/linkedin_logo.jpg" alt="LinkedIn logo" class="social-icon" loading="lazy" />
+            <img src="images/linkedin-logo1.svg" alt="LinkedIn logo" class="social-icon" width="20" height="20" loading="lazy" />
           </a>
           <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@sebastiandeh_hon?_r=1&_t=ZS-94pfcdN4lvE" class="social-link" aria-label="TikTok">
-            <img src="images/tiktok_logo.png" alt="TikTok logo" class="social-icon" loading="lazy" />
+            <img src="images/tiktok-logo1.svg" alt="TikTok logo" class="social-icon" width="20" height="20" loading="lazy" />
           </a>
           <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Honsebastiandehofficial" class="social-link" aria-label="Facebook">
-            <img src="images/facebook_logo.jpg" alt="Facebook logo" class="social-icon" loading="lazy" />
+            <img src="images/facebook-logo1.svg" alt="Facebook logo" class="social-icon" width="20" height="20" loading="lazy" />
           </a>
         </div>
       </div>
@@ -410,7 +418,7 @@
       </div>
     </div>
   </footer>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
 </html>

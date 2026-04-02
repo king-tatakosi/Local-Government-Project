@@ -582,6 +582,8 @@ h1, h2, h3, h4, h5 {
   transform: scale(1.04);
 }
 
+
+
 .official-info {
   padding: var(--space-md);
 }
@@ -815,6 +817,8 @@ h1, h2, h3, h4, h5 {
   flex-shrink: 0;
   width: 28px;
   margin-top: 2px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 30%;
 }
 
 .contact-detail-item strong {
@@ -826,7 +830,6 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 2px;
 }
 
-/* Contact Form */
 .contact-form {
   background: var(--color-white);
   border-radius: var(--radius-lg);
@@ -994,11 +997,11 @@ h1, h2, h3, h4, h5 {
   width: 38px;
   height: 38px;
   border-radius: var(--radius-full);
-  background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.5);
+  color: rgba(0,0,0,0.4);
   border: 1px solid rgba(255,255,255,0.1);
   transition: all var(--transition-fast);
-  transform: scale(1.5);
+  transform: scale(1.2);
   margin: 20px;
 }
 
@@ -1007,6 +1010,7 @@ h1, h2, h3, h4, h5 {
   color: var(--color-navy);
   border-color: var(--color-gold);
   transform: translateY(-2px);
+  transform: scale(1.3);
 }
 
 /* Footer Bottom Bar */

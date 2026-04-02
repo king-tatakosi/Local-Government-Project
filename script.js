@@ -4,7 +4,7 @@ const projects = [
     id: 1,
     title: "Commissioning of educational facilities",
     status: "ongoing",
-    imgSource: "images/school_facilities.jpg",
+    imgSource: "images/school_facilities.webp",
     description:
       `Construction of infrastructural projects
        for schools across the municipality, including a 1,500-capacity 3-storey classroom block.${`<a href="https://www.facebook.com/100022485004943/posts/2118519012240912/?app=fbl" target="_blank" rel="noopener noreferrer" class="project-link"> Get full story on facebook</a>`}`,
@@ -15,7 +15,7 @@ const projects = [
     id: 2,
     title: "Construction of the Kpando-Torkor road",
     status: "ongoing",
-    imgSource: "images/torkor.jpg",
+    imgSource: "images/torkor.webp",
     description:
       `Reconstruction of the major road connecting constituents to Torkor, a suburb of Kpando which harbours fisheries and a vibrant market. This project will improve transportation, boost local commerce, and enhance access to essential services for residents in the area.${`<a href="https://vt.tiktok.com/ZSusLu1gN/" target="_blank" rel="noopener noreferrer" class="project-link"> Get videos on TikTok</a>`}`,
     location: "Kpando-Torkor",
@@ -31,7 +31,7 @@ function createProjectCard(project) {
   return `
     <article class="project-card reveal" data-status="${project.status}" role="listitem">
       <div class="project-card-thumb">
-        <img src="${project.imgSource}" alt="${project.title} thumbnail" class="project-thumb-image" />
+        <img src="${project.imgSource}" alt="${project.title} thumbnail" class="project-thumb-image" loading="lazy" />
       </div>
       <div class="project-card-top">
         <h3 class="project-title">${project.title}</h3>
