@@ -19,5 +19,3 @@ A responsive website for a local government constituency, providing information 
 - **Intersection Observer API**: For scroll-based animations
 - **EmailJS**: For submitting form data straight to Email
 
-## Live Demo
-https://king-tatakosi.github.io/Local-Government-Project/
