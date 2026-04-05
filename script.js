@@ -24,7 +24,8 @@ const projects = [
  
 ];
 
-
+ document.getElementById("current-year").innerText = new Date().getFullYear();
+ 
 function createProjectCard(project) {
   const statusLabel = project.status.charAt(0).toUpperCase() + project.status.slice(1);
 

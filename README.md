@@ -18,4 +18,3 @@ A responsive website for a local government constituency, providing information 
 - **Vanilla JavaScript**: DOM manipulation, form validation, and animations
 - **Intersection Observer API**: For scroll-based animations
 - **EmailJS**: For submitting form data straight to Email
-
