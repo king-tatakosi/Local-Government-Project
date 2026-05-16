@@ -7,7 +7,7 @@ const projects = [
     imgSource: "images/school_facilities.webp",
     description:
       `Construction of infrastructural projects
-       for schools across the municipality, including a 1,500-capacity 3-storey classroom block.${`<a href="https://www.facebook.com/100022485004943/posts/2118519012240912/?app=fbl" target="_blank" rel="noopener noreferrer" class="project-link"> Get full story on facebook</a>`}`,
+       for schools across the municipality, including a 1,500-capacity 3-storey classroom block.${`<a href="https://www.facebook.com/100022485004943/posts/2118519012240912/?app=fbl" target="_blank" rel="noopener noreferrer" class="project-link"> Get full article on facebook</a>`}`,
     location: "Municipality-Wide",
     year: "2026",
   },
@@ -18,6 +18,16 @@ const projects = [
     imgSource: "images/torkor.webp",
     description:
       `Reconstruction of the major road connecting constituents to Torkor, a suburb of Kpando which harbours fisheries and a vibrant market. This project will improve transportation, boost local commerce, and enhance access to essential services for residents in the area.${`<a href="https://vt.tiktok.com/ZSusLu1gN/" target="_blank" rel="noopener noreferrer" class="project-link"> Get videos on TikTok</a>`}`,
+    location: "Kpando-Torkor",
+    year: "2026",
+  },
+  {
+    id: 3,
+    title: "Donation of solar-powered streetlights to islands within the constituency",
+    status: "completed",
+    imgSource: "images/streetlights.webp",
+    description:
+      `Donation of solar-powered streetlights to islands within the constituency. This project will improve safety and accessibility for residents in these remote areas.${`<a href="https://www.facebook.com/100022485004943/posts/2168724463887033/?app=fbl" target="_blank" rel="noopener noreferrer" class="project-link"> Get full article on facebook</a>`}`,
     location: "Kpando-Torkor",
     year: "2026",
   }
